@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 function JoinMission() {
+  const navigate = useNavigate();
   return (
     <section id="join-mission"
      className="join-mission">
@@ -90,15 +92,24 @@ function JoinMission() {
 
 <div className="join-buttons">
 
-  <button className="primary-btn">
+  <button
+    className="primary-btn"
+    onClick={() => navigate("/volunteer")}
+  >
     Become a Volunteer
   </button>
 
-  <button className="donate-btn">
+  <button
+    className="donate-btn"
+    onClick={() => navigate("/donate")}
+  >
     💝 Donate
   </button>
 
-  <button className="secondary-btn">
+  <button
+    className="secondary-btn"
+    onClick={() => navigate("/partner")}
+  >
     Partner With Us
   </button>
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Loader from "./components/Loader";
@@ -18,6 +19,9 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import Donate from "./pages/Donate";
+import Partner from "./pages/Partner";
+import Volunteer from "./pages/Volunteer";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -37,25 +41,42 @@ useEffect(() => {
 if (loading) {
   return <Loader />;
 }
-  return (
-    <>
-      <ScrollProgress />
-      <Navbar />
-      <Hero />
-      <ImpactStats/>
-      <About />
-      <MissionVision />
-      <Programs/>
-      <CoreValues/>
-      <Impact/>
-      <JoinMission/>
-      <Testimonials/>
-      <Gallery/>
-      <Contact/>
-      <Footer/>
-      <BackToTop/>
-    </>
-  );
+return (
+  <>
+    <Routes>
+
+      <Route
+        path="/"
+        element={
+          <>
+            <ScrollProgress />
+            <Navbar />
+            <Hero />
+            <ImpactStats />
+            <About />
+            <MissionVision />
+            <Programs />
+            <CoreValues />
+            <Impact />
+            <JoinMission />
+            <Testimonials />
+            <Gallery />
+            <Contact />
+            <Footer />
+            <BackToTop />
+          </>
+        }
+      />
+
+      <Route path="/donate" element={<Donate />} />
+
+      <Route path="/partner" element={<Partner />} />
+
+      <Route path="/volunteer" element={<Volunteer />} />
+
+    </Routes>
+  </>
+);
 }
 
 export default App;
