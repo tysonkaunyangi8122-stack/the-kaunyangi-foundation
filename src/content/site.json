@@ -1,0 +1,54 @@
+{
+  "programs": [
+    {
+      "title": "Food Relief & Nutrition",
+      "description": "Providing meals, food hampers, and nutritional support to individuals and families experiencing food insecurity."
+    },
+    {
+      "title": "Education & Skills Development",
+      "description": "Supporting access to education through school supplies, scholarships, mentorship, vocational training, and life skills development."
+    },
+    {
+      "title": "Healthcare & Wellness",
+      "description": "Organizing medical outreach, health education, wellness campaigns, and connecting vulnerable people with healthcare services."
+    },
+    {
+      "title": "Community Outreach",
+      "description": "Visiting homes, supporting vulnerable families, encouraging the elderly, assisting widows, and extending love to those in need."
+    },
+    {
+      "title": "Prison Ministry",
+      "description": "Sharing hope, encouragement, practical support, and spiritual care with people in correctional facilities as they prepare for restoration."
+    },
+    {
+      "title": "Sustainable Community Development",
+      "description": "Promoting agriculture, environmental stewardship, economic empowerment, and community projects that create lasting change."
+    }
+  ],
+  "impactHighlights": [
+    {
+      "title": "Food and care",
+      "description": "Through food support, mentorship, prayer, compassion, and community outreach."
+    },
+    {
+      "title": "Family visits",
+      "description": "Providing food assistance, encouragement, and hope to vulnerable households."
+    },
+    {
+      "title": "Education and opportunity",
+      "description": "Supporting young people to remain in school, pursue their dreams, and build a brighter future."
+    },
+    {
+      "title": "Our mission continues",
+      "description": "Every act of love today lays the foundation for greater impact tomorrow."
+    }
+  ],
+  "gallery": [
+    { "title": "Community outreach", "image": "/images/community-outreach.jpg" },
+    { "title": "Food distribution", "image": "/images/food-distribution.jpg" },
+    { "title": "Medical camp", "image": "/images/medical-camp.jpg" },
+    { "title": "Children's program", "image": "/images/childrens-program.jpg" },
+    { "title": "Community support", "image": "/images/community-support.jpg" },
+    { "title": "Humanitarian relief", "image": "/images/humanitarian-relief.jpg" }
+  ]
+}

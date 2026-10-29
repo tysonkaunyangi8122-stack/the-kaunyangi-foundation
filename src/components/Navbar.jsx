@@ -1,61 +1,65 @@
+import { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
+const sections = [
+  ["About", "about"],
+  ["Programs", "programs"],
+  ["Gallery", "gallery"],
+  ["Contact", "contact"],
+];
+
 function Navbar() {
-  return (
-    <nav className="navbar">
-      <h2 className="logo">THE KAUNYANGI FOUNDATION</h2>
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-   <ul className="nav-links">
-
-  <li
-    onClick={() =>
-      document.getElementById("home").scrollIntoView({
-        behavior: "smooth",
-      })
+  useEffect(() => {
+    if (location.pathname === "/" && location.hash) {
+      const targetId = location.hash.slice(1);
+      requestAnimationFrame(() => document.getElementById(targetId)?.scrollIntoView());
     }
-  >
-    Home
-  </li>
+  }, [location.pathname, location.hash]);
 
-  <li
-    onClick={() =>
-      document.getElementById("about").scrollIntoView({
-        behavior: "smooth",
-      })
+  function openSection(event, id) {
+    event.preventDefault();
+    setMenuOpen(false);
+    if (location.pathname !== "/") {
+      navigate(`/#${id}`);
+      return;
     }
-  >
-    About
-  </li>
-
-  <li
-    onClick={() =>
-      document.getElementById("programs").scrollIntoView({
-        behavior: "smooth",
-      })
-    }
-  >
-    Programs
-  </li>
-
-  <li
-    onClick={() =>
-      document.getElementById("contact").scrollIntoView({
-        behavior: "smooth",
-      })
-    }
-  >
-    Contact
-  </li>
-  <li
-  onClick={() =>
-    document.getElementById("gallery").scrollIntoView({
-      behavior: "smooth",
-    })
+    window.history.replaceState(null, "", `/#${id}`);
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   }
->
-  Gallery
-</li>
 
-</ul>
-    </nav>
+  return (
+    <header className="site-header">
+      <nav className="navbar" aria-label="Main navigation">
+        <Link className="logo" to="/" onClick={() => { setMenuOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+          The Kaunyangi Foundation
+        </Link>
+
+        <button
+          className="menu-toggle"
+          type="button"
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span aria-hidden="true">{menuOpen ? "✕" : "☰"}</span>
+        </button>
+
+        <ul id="primary-navigation" className="nav-links" data-open={menuOpen}>
+          <li><Link to="/" aria-current={location.pathname === "/" ? "page" : undefined} onClick={() => setMenuOpen(false)}>Home</Link></li>
+          {sections.map(([label, id]) => (
+            <li key={id}>
+              <a href={`/#${id}`} onClick={(event) => openSection(event, id)}>{label}</a>
+            </li>
+          ))}
+          <li><Link to="/donate" aria-current={location.pathname === "/donate" ? "page" : undefined} onClick={() => setMenuOpen(false)}>Donate</Link></li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 

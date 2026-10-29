@@ -13,7 +13,7 @@ function Impact() {
       <div className="impact-grid">
 
         <div className="impact-card">
-          <h3>👶 Children</h3>
+          <h3>Children</h3>
           <p>
             Giving vulnerable children hope through education, protection,
             and opportunities to thrive.
@@ -21,7 +21,7 @@ function Impact() {
         </div>
 
         <div className="impact-card">
-          <h3>👵 Elderly</h3>
+          <h3>Elderly</h3>
           <p>
             Offering companionship, care, dignity, and practical support to
             senior members of our communities.
@@ -29,7 +29,7 @@ function Impact() {
         </div>
 
         <div className="impact-card">
-          <h3>🤱 Families</h3>
+          <h3>Families</h3>
           <p>
             Strengthening families through encouragement, relief support,
             empowerment, and sustainable opportunities.
@@ -37,7 +37,7 @@ function Impact() {
         </div>
 
         <div className="impact-card">
-          <h3>🏥 The Sick</h3>
+          <h3>The Sick</h3>
           <p>
             Standing with those facing illness through healthcare support,
             compassion, and hope.
@@ -45,7 +45,7 @@ function Impact() {
         </div>
 
         <div className="impact-card">
-          <h3>🤝 Communities</h3>
+          <h3>Communities</h3>
           <p>
             Building stronger, healthier, and more united communities that
             care for one another.
@@ -53,7 +53,7 @@ function Impact() {
         </div>
 
         <div className="impact-card">
-          <h3>🌍 Humanity</h3>
+          <h3>Humanity</h3>
           <p>
             Extending love beyond boundaries by serving every person in
             need regardless of age, nationality, or background.

@@ -1,4 +1,5 @@
 import heroImage from "../assets/hero-image.jpg";
+import { Link } from "react-router-dom";
 function Hero() {
   return (
   <section id="home"
@@ -17,20 +18,8 @@ function Hero() {
       </p>
 
       <div className="hero-buttons">
-        <button onClick={() =>
-  document.getElementById("about").scrollIntoView({
-    behavior: "smooth"
-  })
-}>
-  Our Story
-</button>
-        <button onClick={() =>
-  document.getElementById("join-mission").scrollIntoView({
-    behavior: "smooth"
-  })
-}>
-  Support Our Mission
-</button>
+        <a href="#about">Our Story</a>
+        <Link to="/donate">Support Our Mission</Link>
       </div>
 
     </section>

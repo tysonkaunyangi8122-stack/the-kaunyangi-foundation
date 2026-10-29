@@ -4,7 +4,6 @@ function About() {
 <section
   id="about"
   className="about"
-  data-aos="fade-up"
 >
       <h2>Who We Are</h2>
 
