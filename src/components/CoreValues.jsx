@@ -12,7 +12,7 @@ function CoreValues() {
       <div className="values-grid">
 
         <div className="value-card">
-          <h3>❤️ Love</h3>
+          <h3>Love</h3>
           <p>
             We serve with compassion, kindness, and genuine care for every
             person.
@@ -20,7 +20,7 @@ function CoreValues() {
         </div>
 
         <div className="value-card">
-          <h3>🤝 Service</h3>
+          <h3>Service</h3>
           <p>
             We believe that serving humanity is one of the greatest ways of
             expressing our love for God and our neighbours.
@@ -28,7 +28,7 @@ function CoreValues() {
         </div>
 
         <div className="value-card">
-          <h3>🙏 Faith</h3>
+          <h3>Faith</h3>
           <p>
             Our work is inspired by Christian values, trusting God to guide
             every step of our mission.
@@ -36,7 +36,7 @@ function CoreValues() {
         </div>
 
         <div className="value-card">
-          <h3>🌍 Inclusivity</h3>
+          <h3>Inclusivity</h3>
           <p>
             We embrace every person with dignity and respect regardless of
             age, background, nationality, race, or circumstance.
@@ -44,7 +44,7 @@ function CoreValues() {
         </div>
 
         <div className="value-card">
-          <h3>💙 Integrity</h3>
+          <h3>Integrity</h3>
           <p>
             We remain honest, transparent, accountable, and faithful in all
             that we do.
@@ -52,7 +52,7 @@ function CoreValues() {
         </div>
 
         <div className="value-card">
-          <h3>🌱 Sustainability</h3>
+          <h3>Sustainability</h3>
           <p>
             We pursue lasting solutions that empower individuals, families,
             and communities to flourish.

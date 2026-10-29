@@ -1,0 +1,6 @@
+# This Vite React application uses BrowserRouter. Serve real static assets first,
+# then let the app render its route (including the not-found page).
+/api/site-content  /.netlify/functions/site-content  200
+/api/admin-content  /.netlify/functions/admin-content  200
+/api/admin-submissions  /.netlify/functions/admin-submissions  200
+/*    /index.html   200

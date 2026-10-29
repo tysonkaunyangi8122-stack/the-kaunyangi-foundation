@@ -17,7 +17,7 @@ function JoinMission() {
       <div className="join-grid">
 
         <div className="join-card">
-          <h3>❤️ Volunteer</h3>
+          <h3>Volunteer</h3>
           <p>
             Join our outreach programs and community activities by giving your
             time, skills, and compassion.
@@ -25,7 +25,7 @@ function JoinMission() {
         </div>
 
         <div className="join-card">
-          <h3>🙏 Pray With Us</h3>
+          <h3>Pray With Us</h3>
           <p>
             Pray for the Foundation, our beneficiaries, volunteers, partners,
             and every community we serve.
@@ -33,7 +33,7 @@ function JoinMission() {
         </div>
 
         <div className="join-card">
-          <h3>💝 Give Financial Support</h3>
+          <h3>Give Financial Support</h3>
           <p>
             Your financial contribution helps us expand our programs and reach
             more people with hope and practical support.
@@ -41,7 +41,7 @@ function JoinMission() {
         </div>
 
         <div className="join-card">
-          <h3>🎓 Mentor Someone</h3>
+          <h3>Mentor Someone</h3>
           <p>
             Share your knowledge, experience, and encouragement to help young
             people and families build brighter futures.
@@ -49,7 +49,7 @@ function JoinMission() {
         </div>
 
         <div className="join-card">
-          <h3>💼 Create Opportunities</h3>
+          <h3>Create Opportunities</h3>
           <p>
             Help by connecting beneficiaries with jobs, internships,
             scholarships, apprenticeships, or professional networks.
@@ -57,7 +57,7 @@ function JoinMission() {
         </div>
 
         <div className="join-card">
-          <h3>🌱 Donate Resources</h3>
+          <h3>Donate Resources</h3>
           <p>
             Support our mission by donating food, clothing, books, school
             supplies, farming equipment, medical supplies, or other useful
@@ -66,7 +66,7 @@ function JoinMission() {
         </div>
 
         <div className="join-card">
-          <h3>🤝 Become a Partner</h3>
+          <h3>Become a Partner</h3>
           <p>
             Churches, schools, businesses, organizations, and individuals are
             welcome to partner with us in creating lasting impact.
@@ -74,7 +74,7 @@ function JoinMission() {
         </div>
 
         <div className="join-card">
-          <h3>📢 Spread the Word</h3>
+          <h3>Spread the Word</h3>
           <p>
             Share our mission with your family, friends, church, workplace,
             and community. Every voice helps us reach more people.
@@ -103,7 +103,7 @@ function JoinMission() {
     className="donate-btn"
     onClick={() => navigate("/donate")}
   >
-    💝 Donate
+    Donate
   </button>
 
   <button

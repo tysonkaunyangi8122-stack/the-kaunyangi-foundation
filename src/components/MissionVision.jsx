@@ -4,11 +4,8 @@ function MissionVision() {
 
       <div className="mission-grid">
 
-        <div
-          className="mission-card"
-          data-aos="fade-right"
-        >
-          <h2>❤️ Our Mission</h2>
+        <div className="mission-card">
+          <h2>Our Mission</h2>
 
           <p>
             To serve vulnerable communities through compassion,
@@ -17,11 +14,8 @@ function MissionVision() {
           </p>
         </div>
 
-        <div
-          className="mission-card"
-          data-aos="fade-left"
-        >
-          <h2>🌍 Our Vision</h2>
+        <div className="mission-card">
+          <h2>Our Vision</h2>
 
           <p>
             A transformed society where every person in need—
